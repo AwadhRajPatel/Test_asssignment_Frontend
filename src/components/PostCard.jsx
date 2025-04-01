@@ -49,6 +49,7 @@ const PostCard = ({ post, setPosts, canEdit }) => {
               <textarea
                 className="form-control mb-2"
                 rows="3"
+                style={{ height: "43px" }}
                 value={editedContent}
                 onChange={(e) => setEditedContent(e.target.value)}
               />
