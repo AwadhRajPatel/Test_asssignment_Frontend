@@ -1,11 +1,9 @@
-import React from "react";
 import { Navigate } from "react-router-dom";
 
 const PrivateRoute = ({ children }) => {
-  // ...replace with your actual auth logic...
-  const isAuthenticated = false; // placeholder for authentication status
+    const token = localStorage.getItem("token");  // Check if token exists
 
-  return isAuthenticated ? children : <Navigate to="/Profile" />;
+    return token ? children : <Navigate to="/login" />;
 };
 
 export default PrivateRoute;
