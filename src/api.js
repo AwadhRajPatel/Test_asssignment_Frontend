@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://test-asssignment-backend.vercel.app/api" });
+const API = axios.create({ baseURL: "https://test-asssignment-backend-hoi7.onrender.com/" });
 
 // Attach token to requests if logged in
 API.interceptors.request.use((req) => {
